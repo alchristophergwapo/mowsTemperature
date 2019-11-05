@@ -1,0 +1,32 @@
+html body{
+    height: 100%;
+}
+
+.card{
+    height: 100%;
+    color:cornflowerblue;
+}
+.h4 {
+    background-color: burlywood;
+    padding: 5px;
+    color: black;
+    border-radius: 10px;
+}
+.my-custom-scrollbar {
+    position: relative;
+    height: 300px;
+    overflow: auto;
+}
+.table-wrapper-scroll-y {
+    display: block;
+}
+.jumbotron {
+    background-color: antiquewhite;
+}
+.page-footer {
+    height: 10%;
+    background-color: antiquewhite;
+}
+.wrapper {
+    background-size: contain;
+}

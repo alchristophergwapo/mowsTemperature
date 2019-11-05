@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mqtt</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper" style="background-image: url('background-image-wrapper.jpg');">
+        <div class="jumbotron text-center">
+            <h1>Temperature Dashboard</h1>
+        </div>
+        <div class="container">
+            <!-- row 1 -->
+            <div class="row">
+                <!-- column 1 -->
+                <div class="col">
+                    <div class="card">
+                        <div class="container">
+                            <center>
+                                <div class="card-header">
+                                    <div class="text-center h4">Row1-Col1</div>
+                                </div>
+                                <div class="card-body">
+                                    <div>
+                                        <p id="1">Blank</p>
+                                        <div id="temperature1" class="text-center alert alert-secondary">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p id="2">Blank</p>
+                                        <div id="temperature2" class="text-center alert alert-secondary">
+                                        </div>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <!-- column 2 -->
+                <div class="col">
+                    <div class="card">
+                        <div class="container">
+                            <center>
+                                <div class="card-header">
+                                    <div class="text-center h4">Row2-Col2</div>
+                                </div>
+                                <div class="card-body">
+                                    <div>
+                                        <p id="3">Danica/Roselyn Temperature</p>
+                                        <div id="temperature3" class="text-center alert alert-secondary">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p id="4">Mary Grace/Rose Aira Temperature</p>
+                                        <div id="temperature4" class="text-center alert alert-secondary">
+                                        </div>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <!-- column 3 -->
+                <div class="col">
+                    <div class="card">
+                        <div class="container">
+                            <center>
+                                <div class="card-header">
+                                    <div class="text-center h4">Row1-Col2</div>
+                                </div>
+                                <div class="card-body">
+                                    <div>
+                                        <p id="5">Blank</p>
+                                        <div id="temperature5" class="text-center alert alert-secondary">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p id="6">Blank</p>
+                                        <div id="temperature6" class="text-center alert alert-secondary">
+                                        </div>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- row 2 -->
+            <div class="row">
+                <!-- column 4 -->
+                <div class="col">
+                    <div class="card">
+                        <div class="container">
+                            <center>
+                                <div class="card-header">
+                                    <div class="text-center h4">Row2-Col1</div>
+                                </div>
+                                <div class="card-body">
+                                    <div>
+                                        <p id="7">Cindy/John Louie Temperature</p>
+                                        <div id="temperature7" class="text-center alert alert-secondary">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p id="8">Diansin/Gabatan</p>
+                                        <div id="temperature8" class="text-center alert alert-secondary">
+                                        </div>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <!-- column 5 -->
+                <div class="col">
+                    <div class="card">
+                        <div class="container">
+                            <center>
+                                <div class="card-header">
+                                    <div class="text-center h4">Row2-Col2</div>
+                                </div>
+                                <div class="card-body">
+                                    <div>
+                                        <p id="9">Jessa Mae/Jeanita Temperature</p>
+                                        <div id="temperature9" class="text-center alert alert-secondary">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p id="10">Christopher/Cherry Mae Temperature</p>
+                                        <div id="temperature10" class="text-center alert alert-secondary">
+                                        </div>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <!-- column 6 -->
+                <div class="col">
+                    <div class="card">
+                        <div class="container">
+                            <center>
+                                <div class="card-header">
+                                    <div class="text-center h4">Row2-Col3</div>
+                                </div>
+                                <div class="card-body">
+                                    <div>
+                                        <p id="11">Yorong/Marvie</p>
+                                        <div id="temperature11" class="text-center alert alert-secondary">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p id="12">Marichu/Tyron Temperature</p>
+                                        <div id="temperature12" class="text-center alert alert-secondary">
+                                        </div>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <!-- column 4 -->
+                <div class="col">
+                    <div class="card">
+                        <div class="container">
+                            <center>
+                                <div class="card-header">
+                                    <div class="text-center h4">Row3-Col1</div>
+                                </div>
+                                <div class="card-body">
+                                    <div>
+                                        <p id="13">Precious/Mary Ann Temperature</p>
+                                        <div id="temperature13" class="text-center alert alert-secondary">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p id="14">Blank</p>
+                                        <div id="temperature14" class="text-center alert alert-secondary">
+                                        </div>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <!-- column 5 -->
+                <div class="col">
+                    <div class="card">
+                        <div class="container">
+                            <center>
+                                <div class="card-header">
+                                    <div class="text-center h4">Row3-Col2</div>
+                                </div>
+                                <div class="card-body">
+                                    <div>
+                                        <p id="15">Luzmibel/Adrian</p>
+                                        <div id="temperature15" class="text-center alert alert-secondary">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p id="16">Anabelle/Amaquin Temperature</p>
+                                        <div id="temperature16" class="text-center alert alert-secondary">
+                                        </div>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <!-- column 6 -->
+                <div class="col">
+                    <div class="card">
+                        <div class="container">
+                            <center>
+                                <div class="card-header">
+                                    <div class="text-center h4">Row3-Col3</div>
+                                </div>
+                                <div class="card-body">
+                                    <div>
+                                        <p id="17">Blank</p>
+                                        <div id="temperature17" class="text-center alert alert-secondary">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p id="18">Claire Feliza/Renzy Temperature</p>
+                                        <div id="temperature18" class="text-center alert alert-secondary">
+                                        </div>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="page-footer font-small">
+            <div class="footer-copyright text-center py-3">© 2019 Copyright:
+                To see the and clone the code, just see my
+                repo at <a href="https://github.com/alchristophergwapo/mows.git">https://github.com/alchristophergwapo/mows.git</a>
+            </div>
+
+        </footer>
+
+    </div>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+    <script src="scripts/browser-mqtt.js"></script>
+    <script src="scripts/controller.js"></script>
+</body>
+
+</html>
