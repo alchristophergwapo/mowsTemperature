@@ -70,7 +70,7 @@ client.on("message", function (topic, payload) {
 		var f = payl[1].substring(0,payl[1].replace(")","").length).split(".");
 		$('#temperature10').text(c[0]+":"+c[1].substring(0,2)+" C,"+f[0]+":"+f[1].substring(0,2)+" F");
 	}
-	if (topic == "preAnn/tem") {
+	if (topic == "preAnn/temp") {
 		payl = String(payload).split(",");
 		var c = (payl[0].substring(1,payl[0].length)).split(".");
 		var f = payl[1].substring(0,payl[1].replace(")","").length).split(".");
@@ -82,7 +82,7 @@ client.on("message", function (topic, payload) {
 		var f = payl[1].substring(0,payl[1].replace(")","").length).split(".");
 		$('#temperature12').text(c[0]+":"+c[1].substring(0,2)+" C,"+f[0]+":"+f[1].substring(0,2)+" F");
 	}
-	if (topic == "renzyclaire/temp") {
+	if (topic == "renzyclaire") {
 		payl = String(payload).split(",");
 		var c = (payl[0].substring(1,payl[0].length)).split(".");
 		var f = payl[1].substring(0,payl[1].replace(")","").length).split(".");
@@ -103,9 +103,9 @@ client.subscribe({
 	'Luz-Ian/temp': {qos: 0},
 	'pasores/temperature': {qos: 0},
 	'alobar/temperature': {qos: 0},
-	'preAnn/tem': {qos: 0},
+	'preAnn/temp': {qos: 0},
 	'tychu/temp': {qos: 0},
-	'renzyclaire/temp': {qos: 0},
+	'renzyclaire': {qos: 0},
 }, function (err) {
 	if (err) {
 		Swal.fire({
