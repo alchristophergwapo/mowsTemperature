@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alchristophergwapo/mows.git"
+    "url": "git+https://github.com/alchristophergwapo/mowsTemperature.git"
   },
   "keywords": [
     "node",
@@ -20,13 +20,16 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alchristophergwapo/mows/issues"
+    "url": "https://github.com/alchristophergwapo/mowsTemperature/issues"
   },
   "engines": {
     "node": "10.15"
   },
-  "homepage": "https://github.com/alchristophergwapo/mows#readme",
+  "homepage": "https://github.com/alchristophergwapo/mowsTemperature#readme",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "engines": {
+    "node": "10.x"
+}
 }
