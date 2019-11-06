@@ -95,7 +95,7 @@ client.on("message", function (topic, payload) {
 
 client.subscribe({
 	'sample': { qos: 0 },
-	'MaryAira/temperature': { qos: 0 },
+	'MaryAira': { qos: 0 },
 	'rosedaine': { qos: 0 },
 	'louie/cindy/temp': { qos: 0 },
 	'amabel': { qos: 0 },
